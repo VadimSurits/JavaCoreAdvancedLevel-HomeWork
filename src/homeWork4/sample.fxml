@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="center" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homeWork4.Controller">
+
+    <stylesheets>
+        <URL value="@/homeWork4/css/style.css" />
+    </stylesheets>
+
+    <TextArea fx:id="textArea" editable="false" prefHeight="500" prefWidth="450" />
+
+    <HBox alignment="CENTER">
+        <TextField fx:id="textField" prefWidth="500" promptText="введите сообщение..." />
+        <Button onAction="#ClickBtnAddMsg" onKeyPressed="#ClickEnterBtn" prefHeight="25.0" prefWidth="157.0" text="отправить сообщение" />
+    </HBox>
+
+</VBox>
